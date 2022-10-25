@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Login from './Components/Authentication/Log In/Login';
+import './App.scss'
+import Register from './Components/Authentication/Register/Register';
 
 function App() {
   return (
-    <div className="App">
-     <h1>hello Deepak!</h1>
-    </div>
+    <>
+     {/* <Register/> */}
+     <Login/>
+    </>
   );
 }
 

@@ -1,0 +1,67 @@
+.container {
+    background-color: rgb(80, 97, 252);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .app_title {
+        // background-color: green;
+        font-size: 40px;
+        font-weight: 900;
+        // border-bottom: 2px solid yellow;
+        color: white;
+    }
+
+    .wrapper {
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        color: rgb(54, 54, 54);
+        padding: 10px 40px;
+        min-width: 400px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        // .logo {
+        //     font-size: 25px;
+        //     font-weight: bold;
+        //     border-bottom: 2px solid rgb(54, 54, 54);
+        // }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            color:rgb(80, 97, 252);
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input {
+                padding: 10px;
+                border: none;
+                border-bottom: 1px solid rgb(54, 54, 54);
+                outline: none;
+            }
+
+            button {
+                padding: 8px 0px;
+                background-color: blue;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+
+        P{
+            color: rgb(54, 54, 54);
+        }
+
+    }
+}
