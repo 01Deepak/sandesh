@@ -1,8 +1,14 @@
 import React from 'react'
+import Chats from './Chat/Chats'
+import Sidebar from './Sidebar/Sidebar'
+import './Home.style.scss'
 
 const Home = () => {
   return (
-    <div>Home page</div>
+    <div className='home_container'>
+      <Sidebar/>
+      <Chats/>
+    </div>
   )
 }
 

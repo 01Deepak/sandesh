@@ -1,0 +1,89 @@
+.sidebar_container{
+  flex: 1;
+  background-color: #e3e3e3;;
+  color: white;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  
+  // side Nav
+.sidenav_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+  background-color: #4747d7;
+
+  .profile_info{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+
+    }
+    button{
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: rgb(119, 0, 0);
+      font-size: 14px;
+    }
+  }
+}
+
+///// Side search.....
+.search_Container{
+  input{
+    padding: 10px;
+    border: none;
+    width: 100%;
+    outline: none;
+    background-color: rgb(209, 206, 250);
+  }
+}
+
+////side chats
+.sideChats_constainer{
+  // background-color: gray;
+  border-bottom: 1px solid #b6b6e7;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  gap: 20px;
+
+  img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .sidechats_info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #656161;
+  }
+
+  .title{
+    font-size: 18px;
+  }
+  .chat{
+    font-size: 12px;
+  }
+
+  &:hover {
+    background-color: #c6c6ee;
+    cursor: pointer;
+  }
+
+}
+
+}
+
+

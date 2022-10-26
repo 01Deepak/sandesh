@@ -1,0 +1,130 @@
+.chats_container {
+  flex: 3;
+  background-color: white;
+  overflow-y: scroll;
+
+  //// Chat Header
+  .header_container {
+    position: fixed;
+    top: 0;
+    width: calc(100% - 383px);
+    background-color: #4747d7;
+    border-left: 1px solid gray;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+    }
+
+    img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+
+    }
+  }
+
+  /// footer
+  .footer {
+    position: absolute;
+    width: calc(100% - 372px);
+    bottom: 0;
+
+    background-color: rgb(209, 206, 250);
+    ;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px 0 10px;
+
+    .icons_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      // &::placeholder {
+      //   color: rgb(85, 85, 85);
+
+      // }
+    }
+
+    button {
+      background-color: #4747d7;
+      border: none;
+      padding: 5px;
+      border-radius: 4px;
+      color: white;
+      font-weight: 700;
+    }
+  }
+
+  ///Messages 
+  .messages_container {
+    padding: 70px 20px 40px 10px;
+
+    .sms_container {
+      display: flex;
+
+      .sms_content {
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+
+        p {
+          background-color: rgb(130, 174, 240);
+          padding: 5px;
+          border-radius: 0px 5px 5px 5px;
+          max-width: max-content;
+          color: rgb(70, 68, 68);
+          
+        }
+
+        img {
+          height: 30%;
+          width: 30%;
+          border-radius: 0px 5px 5px 5px;
+          object-fit: cover;
+        }
+      }
+
+      &.owner {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        p {
+          background-color: blue;
+          color: white;
+          border-radius: 10px 0px 10px 10px;
+        }
+        img{
+          border-radius: 10px 0px 10px 10px;
+        }
+      }
+    }
+
+
+
+  }
+
+
+}

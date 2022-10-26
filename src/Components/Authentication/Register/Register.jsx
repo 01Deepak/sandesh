@@ -1,5 +1,6 @@
 import React from 'react'
 import './Register.style.scss'
+import { FcAddImage } from 'react-icons/fc'
 
 const Register = () => {
   return (
@@ -13,7 +14,11 @@ const Register = () => {
               <input type="name" name="name" placeholder="Enter Name"/>
                 <input type="email" name="email"  placeholder='Email'/>
                 <input type="password" name="password" placeholder='Password'/>
-                <label id='upload_dp' >Add DP
+                <label id='upload_dp' >
+                  <span className='add_icon'>
+                    <FcAddImage/>
+                  </span>
+                  Add DP
                 <input type="file" id ='upload_dp' className='dp_upload' name="add_dp"/>
                 </label>
                 <button type="submit">Sign Up</button>
